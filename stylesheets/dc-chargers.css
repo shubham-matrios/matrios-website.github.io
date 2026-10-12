@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+	overflow-x: hidden; /* Prevents horizontal scrolling */
+	margin: 0;
+	padding: 0;
+	background-color: #f9fafc !important;
+
+  }
+  
+  #dc-chargers {
+	padding: 50px 0;
+	background-color: #f9fafc;
+  }
+  
+  .container-fluid {
+	width: 90%;
+	margin: 0 auto;
+  }
+  
+  .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap; /* Enables wrapping on smaller screens */
+  }
+  
+  .col-lg-3 {
+	display: flex;
+	flex-direction: column;
+	
+  }
+  
+  .feature-item {
+	text-align: left;
+  }
+  
+  .feature-item h3 {
+	font-size: 16px;
+	color: #66a048;
+	margin-bottom: 5px;
+  }
+  
+  .feature-item p {
+	font-size: 15px;
+	color: #666;
+  }
+
+  .feature-number {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background-color:#d8eaf3;
+	/* color: black; */
+	text-align: center;
+	border-radius: 50%;
+	/* font-weight: bold; */
+	margin-right: 10px;
+	font-size: 16px;
+	/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+  }
+  
+  
+  #specs h2 {
+	text-align: start;
+	margin: 2.5rem 0 1rem 0;
+  }
+  
+  .specsTable {
+	border-color: #666;
+	font-size: 1.1rem;
+	font-weight: 450;
+	width: 100%;
+  }
+  
+  .specsTable tr td {
+	color: #666;
+  }
+  
+  ul li {
+	margin: 5px 0;
+	font-weight: 500;
+  }
+  
+ 
+  
+  .center-image {
+	max-width: 100%; /* Makes the image responsive */
+	height: auto; /* Maintains the aspect ratio */
+	display: block;
+	margin: 0 auto; /* Centers the image */
+  }
+  
+  
+  /* Ensure the table is scrollable on smaller screens */
+  #specs {
+	overflow-x: auto;
+  }
+  
+  #specs table {
+	width: 100%;
+	table-layout: fixed; /* Ensures table adapts better to different screen sizes */
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+	.row {
+	  flex-direction: column; /* Stack columns on smaller screens */
+	  text-align: center;
+	}
+  
+	.col-lg-3 {
+	  align-items: center; /* Centers the content for better appearance */
+	  text-align: center;
+	}
+  
+
+  
+	/* Make the table responsive */
+	#specs table {
+	  width: 100%;
+	  display: block;
+	  overflow-x: auto; /* Add scroll if necessary */
+	}
+  
+	.specsTable {
+	  font-size: 0.9rem; /* Make table text smaller on smaller screens */
+	}
+  }
+  
+  /* Extra small devices like mobile portrait */
+  @media (max-width: 576px) {
+	.feature-item h3 {
+	  font-size: 16px;
+	}
+  
+	.feature-item p {
+	  font-size: 12px;
+	}
+	.dcdouble h1{
+		font-size: 25px !important;
+	}
+
+	.dcdouble p{
+		align-items: start !important;
+		text-align: start !important;
+	}
+  }
+  

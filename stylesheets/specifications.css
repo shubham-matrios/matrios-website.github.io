@@ -1,0 +1,178 @@
+/* General Styles */
+#product {
+    margin-top: 2rem;
+}
+
+#product p {
+    line-height: 1.8;
+}
+
+#specs h2 {
+    text-align: start;
+    margin: 2.5rem 0 1rem 0;
+}
+
+
+
+.specsTable {
+    border-color: #666;
+    font-size: 1.1rem;
+    font-weight: 450;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specsTable tr td {
+    color: #666;
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+ul li {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* Underline Styles */
+h2 {
+    --a: -45deg; /* control the angle */
+    --t: 0.1em; /* thickness of the underline */
+    color: #749a35;
+    margin-bottom: 30px;
+}
+
+h2 span {
+    --_s: calc(var(--t) * cos(var(--a)));
+    background: linear-gradient(
+            var(--a),
+            #0000 var(--_s),
+            currentColor 0 calc(100% - var(--_s)),
+            #0000 0
+        )
+        bottom/var(--i, 90%) var(--t) no-repeat;
+    padding: 0 0.25em calc(var(--t) + 0.1em);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+h2:hover span {
+    --i: 100%;
+}
+
+h2 {
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+/* Carousel */
+.carousel-slide {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(12, 11, 11);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #5cad2f;
+    border-radius: 50%;
+    width: 40px; /* Optional: Adjust size */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Prevent taking up extra space */
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #4a8d28; /* Optional: Darker shade on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel {
+    padding: 20px; /* Optional: Adds spacing around carousel */
+    box-shadow: 0 4px 10px rgba(197, 197, 197, 0.2); /* Optional: Adds a light background color */
+}
+
+.img-fluid{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #dfdfdf;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #product {
+        margin-top: 1rem;
+    }
+
+    .specsTable {
+        font-size: 1rem;
+    }
+
+    .carousel {
+        padding: 10px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #product p {
+        font-size: 0.9rem;
+    }
+
+    .specsTable tr td {
+        font-size: 0.9rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    .carousel {
+        padding: 5px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}

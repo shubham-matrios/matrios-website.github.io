@@ -1,0 +1,492 @@
+
+:root {
+	--primary-color: #5cad2f;
+	--secondary-color: #f1c40f;
+	--text-color: #242430;
+	--icon-hover-color: #5cad2f;
+  }
+
+  body{
+	background-color: #FFFFFF !important;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'Pridi', serif; */
+	font-family: "Montserrat", sans-serif;
+	
+  }
+  
+  .top-bar {
+	background-color: #ffffff;
+	padding: 10px 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-bar .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .contact-info {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+  }
+  
+  .contact-info a {
+	color: #888;
+	font-size: 14px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+  }
+  
+  
+  .fa-phone-square:before {
+	content: "\f098";
+}
+  .contact-info a:hover {
+	color: var(--text-color);
+  }
+  
+  .contact-info i {
+	color: var(--primary-color);
+	font-size: 18px;
+	margin-right: 8px;
+  }
+  
+  .social-icons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  }
+  
+  .social-icons span {
+	font-size: 14px;
+	color: #888;
+	margin-right: 10px;
+  }
+  
+  .social-icons a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-color);
+	color: #ffffff;
+	text-decoration: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	font-size: 16px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+	background-color: #555;
+	transform: scale(1.1);
+  }
+  
+  .social-icons a:hover {
+	color: var(--icon-hover-color);
+  }
+  
+ 
+     
+      
+        .top-bar {
+			background-color: #ffffff;  
+			padding: 10px 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Thin gray line at the bottom */
+		  }
+		  
+      
+
+      .top-bar .container {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+		justify-content: flex-start;
+      }
+
+      .contact-info a {
+        color: #242430;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 14px;
+      }
+
+	
+    /* Navbar Styles */
+       .navbar {
+        /* background-color: #ffffff; 
+        padding: 10px 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+		position: sticky;
+		top: 0;
+		z-index: 1000; /* Ensures it stays above other elements */
+		background-color: #ffffff; /* Keeps the background visible */
+		padding: 10px 0;
+		
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      }
+
+	  
+
+      .navbar .navbar-nav .nav-link {
+        color: #555;  
+		font-weight: 600;
+	    padding-right: 27px;
+        
+      }
+		.contact-info .phone,
+      .contact-info .email {
+    color: #888; 
+    font-size: 18px;
+}
+
+      .navbar .navbar-nav .nav-link:hover {
+        color: var(--primary-color); 
+      }
+
+	  .navbar-logo {
+		position: relative;
+		padding: 0px 0px 00px 0px;
+		max-width: 200px;
+		height: 100px;
+		line-height: 95px;
+		display: inline-block;
+		vertical-align: top;
+	
+	  }
+
+    .navbar-logo img{
+		width: 230px;
+		height: 125px;
+	}
+
+
+		  /*image carosel start */
+
+		
+	.carousel-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100vh;
+		
+		
+	
+		
+		box-sizing: border-box;
+		overflow: hidden;
+		border-bottom: 2px solid rgba(209, 209, 209, 0.959);
+		
+	  }
+	  
+	  .carousel-text {
+		flex: 1;
+		max-width: 50%;
+		
+	  }
+	  
+	  .carousel-text h1,.matrihead {
+		font-size: 3rem;
+		font-weight: bold;
+		color: #5cad2f;
+		line-height: 1.2;
+	  }
+	  
+	  .carousel-text h1 span {
+		color: #2c2b2b;
+	  }
+	  
+	  .carousel-text p {
+		font-size: 1.2rem;
+		margin: 20px 0;
+		color: #666;
+		line-height: 1.6;
+	  }
+	  .matrip{
+		color: #666;
+		font-size: 1.1rem;
+	  }
+	  
+	  .carousel-text .btn,.btn-ac {
+		padding: 10px 20px;
+		font-size: 1.2rem;
+		font-weight: bold;
+		border: #5cad2f;
+		border-radius: 15px;
+		background-color: #5cad2f;
+	  }
+	  
+	  .carousel-text .btn,.btn-ac:hover{
+        background-color: #5cad2f !important;
+	  }
+	  .carousel-image {
+		flex: 1.5;
+		width: 50%;
+	  }
+	  
+	  .carousel-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+	  }
+	  
+	  .carousel-control-prev-icon,
+	  .carousel-control-next-icon {
+		background-color: #5cad2f;
+		border-radius: 50%;
+	  }
+	  
+	  .carousel-control-prev,
+	  .carousel-control-next {
+		color: #fff;
+		border: none;
+	  }
+	  
+	  .carousel-indicators {
+		position: absolute;
+		bottom: 20px;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	  }
+	  
+	  .carousel-indicators [data-bs-target] {
+		width: 12px;
+		height: 12px;
+		background-color: black;
+		border: 2px solid #5cad2f;
+		border-radius: 50%;
+		margin: 0 5px;
+		transition: background-color 0.3s ease, transform 0.3s ease;
+	  }
+	  
+	  .carousel-indicators [data-bs-target]:hover {
+		transform: scale(1.2);
+	  }
+	  
+	  .carousel-indicators .active {
+		background-color: #5cad2f;
+		border-color: #5cad2f;
+	  }
+	  
+	  
+
+	  /*image carosel end */
+
+	  /*noozel reader design */
+	  .nozzel-reader {
+		background-color: #5cad2f;
+		height: 150px;
+		display: flex;
+		margin-bottom: 10px;
+		/* margin:0px; */
+		align-items: center;
+	  }
+	  
+	  .nozzel-reader .content {
+		font-family: 'Pridi', serif !important;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		font-size: 34px;
+		padding-left: 100px;
+	  }
+	  
+	  .nozzel-reader p {
+		margin: 0;
+	  }
+	  
+	  .nozzel-reader .image {
+		display: flex;
+		align-items: flex-start;
+		
+	  }
+	  
+	  .nozzel-reader .image img {
+		width: 170px;
+		margin-top: -30px;
+		/* height: 160px; */
+	  }
+	  
+	 
+
+	  /*Ac Charger  */
+
+	  .Ac-charger {
+		padding: 40px 20px;
+		/* background-color: #f9f9f9; */
+	}
+
+	  
+	
+	.ac-image img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px;
+		/* box-shadow: 0px 4px 8px rgba(145, 143, 143, 0.1); */
+	}
+	
+	.ac-content h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+		color: #808080;
+		margin-bottom: 20px;
+		font-weight: 900;
+	}
+	
+	.ac-content p {
+		font-size: 1.1rem;
+		color: #666;
+		line-height: 1.6;
+		margin: 0;
+	}
+	.ac-content .btn{
+		
+		margin-top: 50px;
+	
+	}
+
+
+	  
+	
+	 
+
+  /* CMA Section Style */
+
+  .cms-section {
+	position: relative;
+	overflow: hidden;
+	padding: 50px;
+  }
+  
+  /* .bg-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 30px;
+	height: 100%;
+	background-image: url('/utils/images/righttrans.png');
+	background-size: cover;
+	background-position: center;
+	filter: blur(2px);
+	z-index: 1;
+  } */
+  
+  .row-cms {
+	position: relative;
+	z-index: 2;
+  }
+  
+  .row-cms h3 {
+	font-weight: 700;
+	font-size: 35px !important;
+	max-width: 100%;
+	color: #5cad2f;
+	
+  }
+  
+  .row-cms p 
+  {
+	color: #666;
+	font-size: 17px;
+  }
+	
+  
+  .row-cms .btn-success {
+	background-color: #5cad2f;
+	border: none;
+	color: #ffffff;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+  }
+  
+  .btn-success:hover {
+	background-color: #4e9428;
+  }
+  
+  .cms-image img {
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+	
+  }
+  
+  
+
+  /* footer content */
+  .contact-link {
+	color: #666; /* Set text color to gray */
+	text-decoration: none; /* Remove underline */
+  }
+  
+  .contact-link i {
+	color: #666; /* Set icon color to gray */
+  }
+
+  .image-banner{
+	
+	width: 100%;
+	margin-top: 20px;
+	height: auto;
+  }
+
+  .image-banner img{
+	width: 100%;
+	border-radius: 20px;
+	height:auto;
+  }
+  
+
+ /* Styles for the Back to Top button */
+/*  
+#back-to-top {
+	position: fixed; 
+	bottom: 20px; 
+	right: 20px;
+	z-index: 9999;
+	display: none; 
+  }
+  
+  #back-to-top.affix {
+	display: block; 
+  }
+  
+  #back-to-top button {
+	border: none;
+	border-radius: 50%;
+	background-color: #5cad2f; 
+	color: white;
+	width: 50px;
+	height: 50px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+  }
+  
+  #back-to-top button:hover {
+	background-color: #5cad2f; 
+  }
+  
+  #back-to-top .fa-rocket {
+	font-size: 20px;
+	transform: rotate(0deg);
+	transition: transform 0.3s ease;
+  }
+  
+  #back-to-top button:hover .fa-rocket {
+	transform: rotate(-45deg); 
+  }
+   */
+  
+   

@@ -1,0 +1,464 @@
+
+/* Logo nav bar top bar  */
+
+@media (max-width: 768px) {
+    .navbar-logo img{
+        width: 270px;
+        height: 120px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    
+
+    .navbar-logo img{
+        width: 170px;
+        height: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .top-bar .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    
+
+    .navbar .navbar-collapse {
+      justify-content: flex-start;
+    }
+  }
+
+   /* Responsive Adjustments */
+@media (max-width: 768px) {
+.top-bar .container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+}
+
+
+
+/* Carosel Control responsove index page  */
+
+
+/* Responsive Design */
+	  
+@media (max-width: 1200px) {
+    .carousel-content {
+      padding: 2px;
+    }
+  
+    .carousel-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .carousel-text p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .carousel-content {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+    }
+  
+    .carousel-text {
+      max-width: 100%;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .carousel-image {
+      width: 100%;
+    }
+  
+    .carousel-text h1 {
+      font-size: 2.2rem;
+    }
+  
+    .carousel-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-content {
+      padding: 30px;
+    }
+  
+    .carousel-text h1 {
+      font-size: 2rem;
+    }
+  
+    .carousel-text p {
+      font-size: 0.9rem;
+    }
+  
+    .carousel-text .btn {
+      padding: 8px 15px;
+      font-size: 1rem;
+    }
+  
+    .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-content {
+      padding: 0px;
+    }
+  
+    .carousel-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    .carousel-text p {
+      font-size: 0.85rem;
+    }
+  
+    .carousel-text .btn {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  
+    .carousel-indicators [data-bs-target] {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+
+  /* Nozzel reader green page reponsive */
+  @media (max-width: 992px) {
+    .nozzel-reader {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .nozzel-reader .content {
+      font-size: 28px;
+      padding: 0 10px;
+      align-items: center;
+    }
+  
+    .nozzel-reader p {
+      padding-left: 0;
+    }
+  
+    .nozzel-reader .image {
+      padding-right: 0;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .nozzel-reader .image img {
+      width: 150px;
+     
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .nozzel-reader {
+      height: auto;
+      padding: 10px;
+      
+    }
+  
+    .nozzel-reader .content {
+      font-size: 24px;
+    }
+  
+    .nozzel-reader .image img {
+      width: 130px;
+      
+
+
+    }
+  }
+  
+
+  /* index page ac charger reponsive */
+  	
+	@media (max-width: 768px) {
+		.Ac-charger {
+			padding: 30px 10px;
+		} 
+
+    /* .dc-image{
+      width: 70% !important;
+     
+      
+    } */
+
+    .dcdouble h1{ 
+     font-size: 25px !important;
+    }
+	
+     .ac-content{
+      text-align: center !important;
+     }
+
+		.ac-content h1 {
+			font-size: 2rem;
+			margin-top: 10px;
+		}
+	
+		.ac-content p {
+			font-size: 1rem;
+      text-align: start !important;
+     
+			
+		}
+		.ac-content .btn{
+			margin-bottom: 20px;
+		}
+	}
+
+	
+
+    /* cms banner section responsive */
+    @media (max-width: 1200px) {
+        .cms-section {
+          padding: 40px;
+        }
+      
+        .row-cms h3 {
+          font-size: 2.5rem;
+        }
+      
+        .row-cms p {
+          font-size: 15px;
+        }
+      
+        .btn-success {
+          font-size: 15px;
+          padding: 8px 16px;
+        }
+      
+        .cms-image img {
+          margin-left: 0;
+        }
+      }
+      
+      @media (max-width: 992px) {
+        .cms-section {
+          padding: 35px;
+        }
+      
+        .row-cms h3 {
+          font-size: 2rem;
+        }
+      
+        .row-cms p {
+          font-size: 14px;
+        }
+      
+        .btn-success {
+          /* font-size: 14px;
+          padding: 8px 14px; */
+        }
+      
+        .cms-image img {
+          margin-left: 0;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .cms-section {
+          padding: 30px;
+        }
+        .carousel-indicators [data-bs-target]{
+          display: block !important;
+        }
+        .carousel-control-prev,
+	       .carousel-control-next {
+          display: block
+         }
+      
+         carousel-control-prev-icon,
+         .carousel-control-next-icon
+         {
+          display: block;
+         }
+        .row-cms h3 {
+          font-size: 1.75rem;
+        }
+        .matrihead{
+          margin-top: 20px;
+          font-size: 25px  !important;
+          text-align: center !important;
+        }
+        .matrip{
+          font-size: 15px !important;
+          text-align: start !important;
+        }
+      
+        .row-cms p {
+          font-size: 15px !important;
+        }
+      
+        .btn-success {
+          font-size: 13px;
+          padding: 8px 12px;
+        }
+      
+        .cms-image img {
+          margin-left: 0;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .cms-section {
+          padding: 20px;
+        }
+        .matrihead{
+          margin-top: 20px;
+          font-size: 25px  !important;
+          text-align: center !important;
+        }
+        .matrip{
+          font-size: 15px !important;
+          text-align: start !important;
+        }
+      
+        .row-cms h3 { 
+          font-size: 1.5rem !important;
+          
+        }
+       
+        .image-banner img{
+          border-radius: 5px !important;
+          margin: 0 !important;
+        
+          padding: 0 !important;
+        }
+      
+        .row-cms p {
+          font-size: 15px !important;
+        }
+      
+        .btn-success {
+          font-size: 16px !important;
+          padding: 8px 10px;
+        }
+      
+        .cms-image img {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+      
+      @media (max-width: 360px) {
+        .cms-section {
+          padding: 15px;
+        }
+      
+        .row-cms h3 {
+          font-size: 1.25rem;
+        }
+      
+        .row-cms p {
+          font-size: 14px !important;
+        }
+      
+        /* .btn-success {
+          font-size: 11px;
+          padding: 7px 8px;
+        } */
+      
+        .cms-image img {
+          width: 85%;
+        }
+      }
+      
+
+      /* Ac Charger Reponsive Area */
+
+/* For tablets (max-width: 1024px) */
+
+
+@media (max-width: 1024px) {
+    .contentCol img {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .contentCol h1 {
+        font-size: 1.8rem; /* Smaller font size for tablet screens */
+    }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .contentCol img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto; /* Fixing image height to auto */
+      
+    }
+
+    .contentCol h1 {
+        font-size: 1.6rem;
+        padding: 0;
+        text-align: left; 
+        padding-left: 5px; /* Padding adjusted for small screens */
+    }
+
+    .top-bar .container{
+     display: flex;
+     align-items: start !important;
+    }
+
+    .contentCol p {
+        font-size: 1rem;
+        padding-left: 10px; /* Padding adjusted for smaller screens */
+    }
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding:0;
+    }
+}
+
+/* For mobile devices (max-width: 520px) */
+@media (max-width: 520px) {
+    .contentCol h1 {
+        font-size: 1.5rem;
+        padding: 12px;
+        text-align: left; /* Align heading left */
+    }
+
+
+    #content .heading {
+        font-size: 23px !important;
+        margin-bottom: 20px !important;
+        margin-top: 20px !important;
+    }
+
+    .contentCol p {
+        font-size: 15px;
+        text-align: start;
+        padding: 10px !important;
+    }
+
+    .contentCol {
+        padding: 0px !important;
+        margin: 10px !important;
+    }
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+}
