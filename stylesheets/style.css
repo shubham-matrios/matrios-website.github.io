@@ -374,7 +374,7 @@
 	width: 100%;
 	border-radius: 30px;
 	height: 100%;
-	background-image: url('/utils/images/righttrans.png');
+	background-image: url('../utils/images/righttrans.png');
 	background-size: cover;
 	background-position: center;
 	filter: blur(2px);
