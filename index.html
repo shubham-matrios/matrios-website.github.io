@@ -536,7 +536,7 @@ electric vehicle service, zero-emission energy, eco-conscious driving" />
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2024 Copyright:
+    © <span class="copyright-year">2024</span> Copyright:
     <a class="text-reset fw-bold" href="">Matrios</a>
   </div>
 
@@ -570,6 +570,7 @@ electric vehicle service, zero-emission energy, eco-conscious driving" />
 
   </script>
 
+  <script>document.querySelectorAll(".copyright-year").forEach(el => { el.textContent = new Date().getFullYear(); });</script>
 </body>
 
 </html>
