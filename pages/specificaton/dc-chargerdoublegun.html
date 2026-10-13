@@ -312,14 +312,15 @@
 
       <!-- Copyright -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2024 Copyright:
+        © <span class="copyright-year">2024</span> Copyright:
         <a class="text-reset fw-bold" href="https://e4engineer.in">Matrios</a>
       </div>
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
 
-  </body>
+    <script>document.querySelectorAll(".copyright-year").forEach(el => { el.textContent = new Date().getFullYear(); });</script>
+</body>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
